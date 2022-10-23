@@ -4,5 +4,5 @@ const app = require("./app");
 const { PORT, DOMAIN } = require("./config");
 
 app.listen(PORT, function () {
-  console.log(`Started on http://DOMAIN:${PORT}`);
-});
+  console.log(`Started on http://${DOMAIN}:${PORT}`);
+});;
