@@ -16,7 +16,7 @@ function getDatabaseUri() {
     : process.env.DATABASE_URL || "jobly";
 }
 
-const DOMAIN = (process.env.NODE_ENV === "production") ? "0.0.0.0" : "127.0.0.1";
+// const DOMAIN = (process.env.NODE_ENV === "production") ? "0.0.0.0" : "127.0.0.1";
 
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
@@ -37,5 +37,5 @@ module.exports = {
   SECRET_KEY,
   PORT,
   BCRYPT_WORK_FACTOR,
-  getDatabaseUri, DOMAIN
+  getDatabaseUri
 };
